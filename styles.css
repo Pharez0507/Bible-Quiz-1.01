@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #ffd700;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ffd700, #add8e6);
+    color: #333;
+    animation: background-animation 10s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+@keyframes background-animation {
+    0% { background: linear-gradient(135deg, #ffd700, #add8e6); }
+    25% { background: linear-gradient(135deg, #ffa500, #87cefa); }
+    50% { background: linear-gradient(135deg, #ff8c00, #00bfff); }
+    75% { background: linear-gradient(135deg, #ffd700, #add8e6); }
+    100% { background: linear-gradient(135deg, #ffa500, #87cefa); }
+}
+
+.main {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    animation: slide-up 1s ease;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes background-animation {
+    0% { background: linear-gradient(135deg, #ffd700, #add8e6); }
+    25% { background: linear-gradient(135deg, #ffa500, #87cefa); }
+    50% { background: linear-gradient(135deg, #ff8c00, #00bfff); }
+    75% { background: linear-gradient(135deg, #ffd700, #add8e6); }
+    100% { background: linear-gradient(135deg, #ffa500, #87cefa); }
+}
+
+@keyframes slide-up {
+    0% { transform: translateY(100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.about-container, .welcome-message, .playnow-h2, .name, .quiz, #result {
+    text-align: center;
+}
+
+.description {
+    line-height: 1.5;
+}
+
+.playnow-h2 {
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.name input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.name input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.name button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.name button:hover {
+    background-color: #ffc107;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.old-testament-btn {
+    background-color: #ffd700;
+    color: #333;
+}
+
+.old-testament-btn:hover {
+    background-color: #ffc107;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.new-testament-btn {
+    background-color: #add8e6;
+    color: #333;
+}
+
+.new-testament-btn:hover {
+    background-color: #87cefa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.choice button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skip-btn {
+    background-color: #ff9800;
+}
+
+#skip-btn:hover {
+    background-color: #e68a00;
+}
+
+#retry-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #ff6347;
+    font-size: large;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0)
+}

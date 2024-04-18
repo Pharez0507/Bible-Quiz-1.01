@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main">
+        <div class="welcome-message">
+            <h1>Welcome to the <br>Bible Quiz</h1>
+            <p>Test your knowledge of the Holy Scriptures and see how well you fare!</p>
+        </div>
+        <article id="about">
+            <div class="about-container">
+                <h2>About Us</h2>
+                <div class="description">
+                    <p>Welcome to the Bible Quiz, where you may start your path 
+                        of learning and see how much you know about the Holy 
+                        Scriptures! Introducing Pharez, the creative mind behind
+                         this website. Pharez, who is passionate about empowering
+                          people and promoting education, started this project a
+                          s an improved version of his earlier effort, which was
+                        just published on March 26, 2024. <br> <br>
+                    An immersive experience with interesting information and 
+                    interactive challenges is what this new version promises. 
+                    It's more than simply a test; it's an opportunity to deepen 
+                    your knowledge of historical events and biblical lessons. This
+                     site has plenty to offer everyone, regardless of experience 
+                     level or level of interest.</p>
+                </div>
+            </div>
+        </article>
+        <br><br>
+        <article id="playnow">
+            <h2 class="playnow-h2">Enter Your Name to start the Bible Quiz</h2>
+            <br>
+            <div class="name">
+                <input type="text" placeholder="Please enter your name" id="name">
+                <button type="button" id="name-btn">Start Quiz</button>
+            </div>
+            <br>
+            <div class="quiz" id="quiz" style="display: none;">
+                <h2 id="quiz-question"></h2>
+                <br>
+                <div class="choice" id="answer-buttons">
+                    <button class="old-testament-btn btn" id="answer-btn-left">Old Testament</button>
+                    <button class="new-testament-btn btn" id="answer-btn-right">New Testament</button>
+                    <button id="skip-btn">Skip</button>
+                </div>
+            </div>
+            <div id="result" style="display: none;">
+                <h2>Your Score:</h2>
+                <p id="score"></p>
+                <button id="retry-btn">Retry</button>
+                <div class="loading" style="display: none;">
+                    <div class="loader"></div>
+                    <p>Loading...</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
